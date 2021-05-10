@@ -1,0 +1,47 @@
+{
+  "name": "gaivota-full-stack-test",
+  "version": "0.1.0",
+  "private": true,
+  "license": "SEE LICENSE IN gaivota.ai/license",
+  "scripts": {
+    "docker": "docker run -p 21017:27017 -d mongo && docker ps",
+    "dev": "clear && NODE_ENV=development nodemon -r dotenv/config ./src/server.js ",
+    "lint": "eslint ./src --fix",
+    "start": "node ./src/server.js",
+    "test": "cross-env DEBUG=-* jest --detectOpenHandles --forceExit --collectCoverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csvjson": "^5.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "hashids": "^2.2.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.12.5",
+    "mongoose-date-format": "^1.2.0",
+    "mongoose-plugin-date-format": "^1.1.2",
+    "node-fetch": "^2.6.0",
+    "youch": "^2.2.1",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.18.2",
+    "supertest": "^6.1.3"
+  }
+}
