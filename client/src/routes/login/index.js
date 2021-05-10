@@ -14,7 +14,7 @@ import "../../styles/login.css";
 const Login = () => {
   const dispatch = useDispatch();
   const [loginForm, setLoginForm] = useState({
-    email: "admin@gaivota.ai",
+    email: "admin@admin.com",
     password: "admin"
   });
   const [errors, setErrors] = useState(false);
@@ -78,7 +78,7 @@ const Login = () => {
             name="email"
             value={loginForm.email}
             onChange={handleChange("email")}
-            placeholder="admin@gaivota.ai"
+            placeholder="admin@admin.com"
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">

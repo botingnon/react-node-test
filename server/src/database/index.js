@@ -13,11 +13,11 @@ class Database {
 			mongoose.connection.on("open", async () => {
 				log(`Mongo connected: ${url}`);
 
-				await UserRepository.deleteMany({ email: "admin@gaivota.ai" });
+				await UserRepository.deleteMany({ email: "admin@admin.com" });
 
 				await UserRepository.create({
 					name: "Admin",
-					email: "admin@gaivota.ai",
+					email: "admin@admin.com",
 					password: "admin"
 				});
 

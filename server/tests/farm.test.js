@@ -29,7 +29,7 @@ describe("Test farms path", () => {
 				.post("/login")
 				.set("Accept", "application/json")
 				.send({
-					email: "admin@gaivota.ai",
+					email: "admin@admin.com",
 					password: "admin"
 				})
 				.expect(200)

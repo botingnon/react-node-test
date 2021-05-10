@@ -31,7 +31,7 @@ routes.get("/challenge/encode/:number([\\d]{1,8})", ChallengeController.encode);
 routes.get("/challenge/decode/:code", ChallengeController.decode);
 
 routes.get("/", (req, res) => {
-	res.status(200).send("Gaivota Test");
+	res.status(200).send("Test");
 });
 
 module.exports = routes;
