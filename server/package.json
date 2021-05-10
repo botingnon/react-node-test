@@ -1,8 +1,8 @@
 {
-  "name": "gaivota-full-stack-test",
+  "name": "full-stack-test",
   "version": "0.1.0",
   "private": true,
-  "license": "SEE LICENSE IN gaivota.ai/license",
+  "license": "SEE LICENSE IN license",
   "scripts": {
     "docker": "docker run -p 21017:27017 -d mongo && docker ps",
     "dev": "clear && NODE_ENV=development nodemon -r dotenv/config ./src/server.js ",
